@@ -145,12 +145,6 @@
 <div id='retext'></div>
 <script>
 
-$('#text-btn').on('click', function(){
-  $('#retext').append(final_span.textContent);
-  
-});
-
-console.log($('#final_span').val();)
 
 var langs =
 [['Afrikaans',       ['af-ZA']],
@@ -390,6 +384,12 @@ function showButtons(style) {
   copy_info.style.display = 'none';
   email_info.style.display = 'none';
 }
+
+$('#text-btn').on('click', function(){
+  $('#retext').append(final_span.textContent);
+
+});
+console.log($('#final_span').val());
 var grabVoiceToText = $('#final_span').textContent;
 var grabVoiceToText = $('#final_span').val();
 </script>
