@@ -144,7 +144,7 @@
 <button id="text-btn">ADD VOICE TEXT</button>
 <div id='retext'></div>
 <script>
-
+var grabVoiceToText = "";
 
 var langs =
 [['Afrikaans',       ['af-ZA']],
@@ -389,7 +389,7 @@ $('#text-btn').on('click', function(){
 
   $('#retext').append(final_span.textContent);
 console.log($('#final_span').textContent);
-var grabVoiceToText = $('#retext').val();
+grabVoiceToText = $('#retext').val();
 });
 
 
