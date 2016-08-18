@@ -141,9 +141,17 @@
     <select id="select_dialect"></select>
   </div>
 </div>
+<button id="text-btn">ADD VOICE TEXT</button>
 <div id='retext'></div>
 <script>
-$('#retext').append(final_span.textContent);
+
+$('#text-btn').on('click', function(){
+  $('#retext').append(final_span.textContent);
+  
+});
+
+console.log($('#final_span').val();)
+
 var langs =
 [['Afrikaans',       ['af-ZA']],
  ['Bahasa Indonesia',['id-ID']],
