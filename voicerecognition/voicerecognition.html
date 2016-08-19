@@ -138,8 +138,11 @@
     &nbsp;&nbsp;
     <select id="select_dialect"></select>
   </div>
+  <button id="text-btn">ADD VOICE TEXT</button>
+  <div id='retext'></div>
 </div>
 <script>
+var grabVoiceToText = "";
 var langs =
 [['Afrikaans',       ['af-ZA']],
  ['Bahasa Indonesia',['id-ID']],
@@ -378,5 +381,14 @@ function showButtons(style) {
   copy_info.style.display = 'none';
   email_info.style.display = 'none';
 }
+ $('#text-btn').on('click', function(){
+ 
+   $('#retext').append(final_span.textContent);
+   $('#retext').append(final_span.textContent);
+   $('#retext').val(final_span.textContent);
+    console.log($('#final_span').textContent);
+    grabVoiceToText = $('#retext').val();
+  });
+
 var grabVoiceToText = $('#final_span').textContent;
 </script>
